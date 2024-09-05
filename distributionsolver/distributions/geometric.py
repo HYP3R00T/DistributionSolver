@@ -31,7 +31,7 @@ def distribution_function(p: float, x: int) -> None:
     st.write("Step 2: Solve the equation")
     term_1 = (1 - p) ** (x - 1)
     term_2 = p
-    st.latex(f"P(X = {x}) = {dotf(term_1, 0)} \\cdot {dotf(term_2, 0)}")
+    st.latex(f"P(X = {x}) = {dotf(term_1)} \\cdot {dotf(term_2)}")
 
     st.write("Hence,")
     st.latex(f"P(X = {x}) = {dotf(term_1 * term_2)}")
