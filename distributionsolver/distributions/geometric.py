@@ -26,7 +26,7 @@ def distribution_function(p: float, x: int) -> None:
 
     st.write("Step 1: Substitute the values in the distribution function")
 
-    st.latex(r"P(X = {}) = (1 - {})^{{{}-1}} \cdot {}".format(dotf(x, 0), dotf(p, 0), dotf(x, 0), dotf(p, 0)))
+    st.latex(r"P(X = {}) = (1 - {})^{{{}-1}} \cdot {}".format(dotf(x, 0), dotf(p), dotf(x, 0), dotf(p)))
 
     st.write("Step 2: Solve the equation")
     term_1 = (1 - p) ** (x - 1)
